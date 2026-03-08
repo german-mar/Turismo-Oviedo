@@ -13,33 +13,21 @@
     margin:    0 auto;	/* centro horizontalmente */
 }
 
-/* ------------------------------ ENCABEZADO --------------------------------------------- */
-header {
-    color:            white;
-    background-color: #2c3e50;    /* Azul oscuro */
-    text-align:         center;
-    margin-bottom:      2em;       
-    padding:            1em 0;      /* padding relativo al tamaño de fuente */
-}
-
-header .contenedor p {
-    /* font-family: Arial, Helvetica, sans-serif; */
-    font-size: 1.1em;   /* el subtitulo un poco mas grande */
-}
 
 /* ------------------------------ NAVEGACIÓN ---------------------------------------------- */
-
 /* navegacion (menu) */
 nav {
+    position:           sticky;     /* el menu se mantiene arriba */
+    top:                0;          /* en el tope de la pagina */
     background-color: #2c3e50;
-    display:    flex;	/* flexbox para menu horizontal */
+    display:            flex;
 }
 
 /* lista de elementos del menu */
 nav ul {
     list-style: none;   /* quito los puntos de la lista */
     display:    flex;   /* flexbox para menu horizontal */
-    /* flex-wrap:  wrap;   /* permite que los elementos bajen a siguiente línea */
+    flex-wrap:  wrap;   /* permite que los elementos bajen a siguiente línea */
     gap:        10px;   /* espacio entre elementos */
 }
 
@@ -49,23 +37,42 @@ nav ul li a {
     text-decoration: none;				        /* quito el subrayado */
     padding:         6px 6px;
     border-radius:   5px;					    /* bordes redondeados */
-    transition:      background-color 0.3s;     /* transicion suave al hacer hover */
-    display:         inline-block;				/* para que el padding funcione bien */
+    transition:      background-color 0.4s;     /* transicion suave al hacer hover */
+    display:         inline-block;
 }
 
 /* Efecto hover en enlaces de navegación */
 nav ul li a:hover {
-    /* color: #000000; */
-    background-color: #3498db;      /* Azul  claro */
+    text-shadow:        2px 2px 4px rgba(0, 0, 0, 1);   /* sombra debajo de texto */
+    transform:          translate(-1px, -1px);            /* traslado el texto un pixel arriba y a la izquierda */
+    background-color: #3498db;
+}
+
+
+
+/* ------------------------------ ENCABEZADO Y PIE DE PÁGINA (COMÚN) --------------------------------------- */
+header, footer {
+    color:            white;
+    background-color: #2c3e50;    /* Azul oscuro */
+    text-align:         center;
+    padding:            2em 0;      /* padding relativo al tamaño de fuente */
+}
+
+/* ------------------------------ ENCABEZADO --------------------------------------------- */
+header {
+    margin-bottom: 2em;
+}
+
+header .contenedor p {
+    font-size: 1.1em;   /* el subtitulo un poco mas grande */
 }
 
 /* ------------------------------ PIE DE PÁGINA ------------------------------------------- */
 footer {
-    color:            white;
-    background-color: #2c3e50;
-    text-align:         center;
-    padding:            2rem 0;
-    margin-top:         2em;
+    margin-top: 2em;
 }
+
+
+
 
 

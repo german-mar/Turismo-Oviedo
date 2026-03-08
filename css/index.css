@@ -4,12 +4,13 @@
   se importa el base.css y aqui se añaden las caracteristicas exclusicas del index.html
 */
 
-/* importo el css basico ara todas las paginas */
+/* importo el css basico de todas las paginas */
 @import "base.css";
 
 /* ----------------------- CONTENIDO PARTICULAR DE LA PÁGINA PRINCIPAL index.html --------------- */
 
-/* Seccion principal (al principio de la pagina) */
+
+/* ----------------------- SECCIÓN PRINCIPAL (PRINCIPIO DE LA PÁGINA) --------------------------- */
 .principal {
     background-color: #1a6ca3;    /* Azul claro */
     color:            white;
@@ -19,13 +20,17 @@
     margin:             2em 0;
 }
 
+/* titulo de la sccion principal */
 .principal h2 {
-    font-size:     2em; /* Tamaño grande para el título */
+    font-size:     2em;     /* tamaño grande para el título */
     margin-bottom: 1em;
 }
 
+/* texto de la seccion principal */
 .principal p {
-    font-size: 1.2em;
+    font-size: 1.1em;       /* tamaño un poco mas grande para el texto del contenido */
     max-width: 800px;
-    margin:    0 auto; /* Centra el párrafo */
+    margin:    0 auto;      /* centro el párrafo */
 }
+
+/* ----------------------- SECCIÓN PRINCIPAL (PRINCIPIO DE LA PÁGINA) --------------------------- */
