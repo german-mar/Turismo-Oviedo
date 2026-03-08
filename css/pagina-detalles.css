@@ -1,0 +1,7 @@
+/* 
+  ARCHIVO: pagina-detalles.css
+  hoja de estilos para las paginas del sitio web (excepto la principal)
+*/
+
+/* importa el css que sirve de base para todas las paginas */
+@import "base.css";
