@@ -3,3 +3,14 @@
   Hoja de estilos principal para el sitio web de turismo de Oviedo
 */
 
+
+/*
+CONTENEDOR PRINCIPAL
+centra el contenido y le da un ancho maximo
+este contenedor lo tienen varios elementos */
+.contenedor {
+    max-width: 1024px;	/* maximo ancho 1200px    */
+    margin:    0 auto;	/* centro horizontalmente */
+    background-color: rgb(253, 192, 112);
+}
+
