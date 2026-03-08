@@ -38,6 +38,8 @@
    este espacio es un grid donde se colocaran varias de las atracciones de Oviedo
    cada atraccion ira en un rectangulo con foto y descripcion
 */
+
+/* ----------------------- GRID PARA LOS ARTÍCULOS --------------------------------------------- */
 .tarjetas {
     display:    grid;   /* grid para colocar las atracciones de Oviedo */
     gap:        20px;   /* espacio entre tarjetas */
@@ -48,7 +50,7 @@
 
 }
 
-/* una tarjeta individual */
+/* ----------------------- ARTÍCULO INDIVIDUAL --------------------------------------------- */
 .tarjeta {
     background-color: white;
     border-radius:      10px;
@@ -57,8 +59,24 @@
     transition:         transform 0.3s;               /* animación suave */
 }
 
+/* imagen de la atraccion turistica */
 .tarjeta img {
     width: 100%; /* Imagen ocupa todo el ancho */
     height: 200px; /* Altura fija */
     object-fit: cover; /* La imagen se recorta para llenar el espacio sin deformarse */
+}
+
+/* titulo de la atraccion turistica */
+.tarjeta h3 {
+    padding-left:  1em;
+    padding-right: 1em;
+    margin-top: 0.2em;
+    margin-bottom: 0;
+}
+
+/* texto descriptivo de la atraccion turistica */
+.tarjeta p {
+    padding-left:  1em;
+    padding-right: 1em;
+    margin-bottom: 1em;
 }
