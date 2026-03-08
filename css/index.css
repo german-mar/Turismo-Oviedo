@@ -1,0 +1,31 @@
+/* 
+  ARCHIVO: index.css
+  Hoja de estilos con caracteristicas especiales para el index.html
+  se importa el base.css y aqui se añaden las caracteristicas exclusicas del index.html
+*/
+
+/* importo el css basico ara todas las paginas */
+@import "base.css";
+
+/* ----------------------- CONTENIDO PARTICULAR DE LA PÁGINA PRINCIPAL index.html --------------- */
+
+/* Seccion principal (al principio de la pagina) */
+.principal {
+    background-color: #1a6ca3;    /* Azul claro */
+    color:            white;
+    padding:            3em 0;      /* Padding vertical grande */
+    text-align:         center;
+    border-radius:      10px;       /* Bordes redondeados */
+    margin:             2em 0;
+}
+
+.principal h2 {
+    font-size:     2em; /* Tamaño grande para el título */
+    margin-bottom: 1em;
+}
+
+.principal p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin:    0 auto; /* Centra el párrafo */
+}
