@@ -61,22 +61,27 @@
 
 /* imagen de la atraccion turistica */
 .tarjeta img {
-    width: 100%; /* Imagen ocupa todo el ancho */
-    height: 200px; /* Altura fija */
-    object-fit: cover; /* La imagen se recorta para llenar el espacio sin deformarse */
+    width: 100%;            /* Imagen ocupa todo el ancho */
+    height: 200px;          /* Altura fija */
+    object-fit: cover;      /* La imagen se recorta para llenar el espacio sin deformarse */
 }
 
 /* titulo de la atraccion turistica */
 .tarjeta h3 {
-    padding-left:  1em;
-    padding-right: 1em;
-    margin-top: 0.2em;
-    margin-bottom: 0;
+    padding-left:  .5em;
+    padding-right: .5em;
+    margin-top:    .2em;
+    margin-bottom: .5em;
 }
 
 /* texto descriptivo de la atraccion turistica */
 .tarjeta p {
-    padding-left:  1em;
-    padding-right: 1em;
-    margin-bottom: 1em;
+    padding-left:  .5em;
+    padding-right: .5em;
+    margin-top:    .2em;
+    margin-bottom: .5em;
+}
+
+.tarjeta:hover {
+    transform: translateY(-6px);    /* Se eleva ligeramente al pasar el ratón */
 }
