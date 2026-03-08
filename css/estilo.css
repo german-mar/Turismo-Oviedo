@@ -4,7 +4,8 @@
 */
 
 
-/* ------------------------------ CONTENEDOR PRINCIPAL ----------------------------------- */
+/* ------------------------------ CONTENEDOR --------------------------------------------- */
+/* contenedor con atributos genericos iniciales */
 .contenedor {
     max-width: 1024px;	/* maximo ancho 1200px    */
     margin:    0 auto;	/* centro horizontalmente */
@@ -26,23 +27,25 @@ header .contenedor p {
 
 /* ------------------------------ NAVEGACIÓN ---------------------------------------------- */
 
+/* navegacion (menu) */
 nav {
     background-color: #2c3e50;
     display:    flex;	/* flexbox para menu horizontal */
-    gap:        20px;	/* espacio entre elementos */
 }
 
+/* lista de elementos del menu */
 nav ul {
     list-style: none;   /* quito los puntos de la lista */
     display:    flex;   /* flexbox para menu horizontal */
     /* flex-wrap:  wrap;   /* permite que los elementos bajen a siguiente línea */
-    gap:        20px;   /* espacio entre elementos */
+    gap:        10px;   /* espacio entre elementos */
 }
 
+/* enlaces del menu */
 nav ul li a {
     color:         white;
     text-decoration: none;				        /* quito el subrayado */
-    padding:         10px 15px;
+    padding:         6px 6px;
     border-radius:   5px;					    /* bordes redondeados */
     transition:      background-color 0.3s;     /* transicion suave al hacer hover */
     display:         inline-block;				/* para que el padding funcione bien */
@@ -52,6 +55,29 @@ nav ul li a {
 nav ul li a:hover {
     /* color: #000000; */
     background-color: #3498db;      /* Azul  claro */
+}
+
+/* ------------------------------ CONTENIDO DE LA PÁGINA (MAIN) -------------------------------- */
+
+/* Seccion principal (al principio de la pagina) */
+.principal {
+    background-color: #1a6ca3;    /* Azul claro */
+    color:            white;
+    padding:            3em 0;      /* Padding vertical grande */
+    text-align:         center;
+    border-radius:      10px;       /* Bordes redondeados */
+    margin:             2em 0;
+}
+
+.principal h2 {
+    font-size:     2em; /* Tamaño grande para el título */
+    margin-bottom: 1em;
+}
+
+.principal p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin:    0 auto; /* Centra el párrafo */
 }
 
 /* ------------------------------ PIE DE PÁGINA ------------------------------------------- */
