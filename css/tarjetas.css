@@ -1,45 +1,17 @@
 /* 
-  ARCHIVO: index.css
-  Hoja de estilos con caracteristicas especiales para el index.html
-  se importa el base.css y aqui se añaden las caracteristicas exclusicas del index.html
+  ARCHIVO: tarjetas.css
+  las tarjetas se usan para las atracciones de la primera pagina index.html
+  pero como son tan complejas se separaron de index.css y se pusieron en este archivo
 */
 
-/* importo el css basico de todas las paginas */
-@import "base.css";
 
-/* ----------------------- CONTENIDO PARTICULAR DE LA PÁGINA PRINCIPAL index.html --------------- */
-
-
-/* ----------------------- SECCIÓN PRINCIPAL (PRINCIPIO DE LA PÁGINA) --------------------------- */
-.principal {
-    background-color: #1a6ca3;    /* Azul claro */
-    color:            white;
-    padding:            3em 0;      /* Padding vertical grande */
-    text-align:         center;
-    border-radius:      10px;       /* Bordes redondeados */
-    margin:             2em 0;
-}
-
-/* titulo de la sccion principal */
-.principal h2 {
-    font-size:     2em;     /* tamaño grande para el título */
-    margin-bottom: 1em;
-}
-
-/* texto de la seccion principal */
-.principal p {
-    font-size: 1.1em;       /* tamaño un poco mas grande para el texto del contenido */
-    max-width: 800px;
-    margin:    0 auto;      /* centro el párrafo */
-}
-
-/* ----------------------- SECCION DE ARTICULOS --------------------------------------------- */
+/* ----------------------- SECCION DE TARJETAS --------------------------------------------- */
 /* tarjetas para algunas de las atracciones
    este espacio es un grid donde se colocaran varias de las atracciones de Oviedo
    cada atraccion ira en un rectangulo con foto y descripcion
 */
 
-/* ----------------------- GRID PARA LOS ARTÍCULOS --------------------------------------------- */
+/* ----------------------- GRID PARA LAS TARJETAS--------------------------------------------- */
 .tarjetas {
     display:    grid;   /* grid para colocar las atracciones de Oviedo */
     gap:        20px;   /* espacio entre tarjetas */
