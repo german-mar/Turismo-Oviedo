@@ -6,6 +6,7 @@
 
 /* importo el css basico de todas las paginas */
 @import "base.css";
+@import "tarjetas.css";
 
 /* ----------------------- CONTENIDO PARTICULAR DE LA PÁGINA PRINCIPAL index.html --------------- */
 
@@ -33,67 +34,3 @@
     margin:    0 auto;      /* centro el párrafo */
 }
 
-/* ----------------------- SECCION DE ARTICULOS --------------------------------------------- */
-/* tarjetas para algunas de las atracciones
-   este espacio es un grid donde se colocaran varias de las atracciones de Oviedo
-   cada atraccion ira en un rectangulo con foto y descripcion
-*/
-
-/* ----------------------- GRID PARA LOS ARTÍCULOS --------------------------------------------- */
-.tarjetas {
-    display:    grid;   /* grid para colocar las atracciones de Oviedo */
-    gap:        20px;   /* espacio entre tarjetas */
-    margin:     2em 0;
-    grid-template-columns:  repeat(auto-fit, minmax(300px, 1fr));   /* columnas responsivas */
-                        /* auto-fit: tantas columnas como quepan
-                           minmax(300px, 1fr): cada columna de 300px y espacios iguales (1fr) */
-
-}
-
-/* ----------------------- ARTÍCULO INDIVIDUAL --------------------------------------------- */
-.tarjeta {
-    background-color: white;
-    border-radius:      10px;
-    overflow:           hidden;                       /* esconde bordes de imagen que sobresalgan */
-    box-shadow:         0 2px 5px rgba(0,0,0,0.2);  /* sombra sutil */
-    transition:         transform 0.3s;               /* animación suave */
-}
-
-/* imagen de la atraccion turistica */
-.tarjeta img {
-    width: 100%;            /* Imagen ocupa todo el ancho */
-    height: 200px;          /* Altura fija */
-    object-fit: cover;      /* La imagen se recorta para llenar el espacio sin deformarse */
-}
-
-/* titulo de la atraccion turistica */
-.tarjeta h3 {
-    padding-left:  .5em;
-    padding-right: .5em;
-    margin-top:    .2em;
-    margin-bottom: .5em;
-}
-
-/* texto descriptivo de la atraccion turistica */
-.tarjeta p {
-    padding-left:  .5em;
-    padding-right: .5em;
-    margin-top:    .2em;
-    margin-bottom: .5em;
-}
-
-.tarjeta:hover {
-    transform: translateY(-6px);    /* Se eleva ligeramente al pasar el ratón */
-}
-
-/* Botones */
-.boton {
-    display:            inline-block;
-    background-color: #3498db;
-    color:            white;
-    padding:            6px 12px;
-    text-decoration:    none;                   /* elimino subrayado */
-    border-radius:      5px;
-    transition:         background-color 0.3s;
-    margin: 0px 0px 4px 4px;
-}
