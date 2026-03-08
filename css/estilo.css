@@ -4,13 +4,63 @@
 */
 
 
-/*
-CONTENEDOR PRINCIPAL
-centra el contenido y le da un ancho maximo
-este contenedor lo tienen varios elementos */
+/* ------------------------------ CONTENEDOR PRINCIPAL ----------------------------------- */
 .contenedor {
     max-width: 1024px;	/* maximo ancho 1200px    */
     margin:    0 auto;	/* centro horizontalmente */
-    background-color: rgb(253, 192, 112);
 }
+
+/* ------------------------------ ENCABEZADO --------------------------------------------- */
+header {
+    color:            white;
+    background-color: #2c3e50;    /* Azul oscuro */
+    text-align:         center;
+    margin-bottom:      2em;       
+    padding:            1em 0;      /* padding relativo al tamaño de fuente */
+}
+
+header .contenedor p {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size: 1.1em;   /* el subtitulo un poco mas grande */
+}
+
+/* ------------------------------ NAVEGACIÓN ---------------------------------------------- */
+
+nav {
+    background-color: #2c3e50;
+    display:    flex;	/* flexbox para menu horizontal */
+    gap:        20px;	/* espacio entre elementos */
+}
+
+nav ul {
+    list-style: none;   /* quito los puntos de la lista */
+    display:    flex;   /* flexbox para menu horizontal */
+    /* flex-wrap:  wrap;   /* permite que los elementos bajen a siguiente línea */
+    gap:        20px;   /* espacio entre elementos */
+}
+
+nav ul li a {
+    color:         white;
+    text-decoration: none;				        /* quito el subrayado */
+    padding:         10px 15px;
+    border-radius:   5px;					    /* bordes redondeados */
+    transition:      background-color 0.3s;     /* transicion suave al hacer hover */
+    display:         inline-block;				/* para que el padding funcione bien */
+}
+
+/* Efecto hover en enlaces de navegación */
+nav ul li a:hover {
+    /* color: #000000; */
+    background-color: #3498db;      /* Azul  claro */
+}
+
+/* ------------------------------ PIE DE PÁGINA ------------------------------------------- */
+footer {
+    color:            white;
+    background-color: #2c3e50;
+    text-align:         center;
+    padding:            2rem 0;
+    margin-top:         2em;
+}
+
 
