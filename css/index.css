@@ -33,4 +33,17 @@
     margin:    0 auto;      /* centro el párrafo */
 }
 
-/* ----------------------- SECCIÓN PRINCIPAL (PRINCIPIO DE LA PÁGINA) --------------------------- */
+/* ----------------------- SECCION DE ARTICULOS --------------------------------------------- */
+/* tarjetas para algunas de las atracciones
+   este espacio es un grid donde se colocaran varias de las atracciones de Oviedo
+   cada atraccion ira en un rectangulo con foto y descripcion
+*/
+.tarjetas {
+    display:                grid;                                   /* grid para colocar las atracciones de Oviedo */
+    grid-template-columns:  repeat(auto-fit, minmax(300px, 1fr));   /* Columnas responsivas */
+                                                                    /* auto-fit: tantas columnas como quepan
+                                                                       minmax(300px, 1fr): cada columna de 300px
+                                                                                           y espacios iguales (1fr) */
+    gap:                    20px;                                   /* Espacio entre tarjetas */
+    margin:                 2em 0;
+}
