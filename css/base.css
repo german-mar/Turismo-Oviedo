@@ -79,6 +79,55 @@ footer {
 }
 
 
+/* ------------------------------ MEDIA PARA moviles -------------------------------- */
+/* ajustes para pantallas pequeñas (menos de 700px) */
+@media screen and (max-width: 700px) {
+    /* Ajusto el contenedor para que no quede pegado a los bordes */
+    .contenedor {
+        max-width:  100%;              /* ocupa todo el ancho disponible */
+        padding:    0 15px;            /* añado padding a los lados para que el texto no toque los bordes */
+    }
+    
+    /* cambios en la navegación para moviles */
+    nav ul {
+        justify-content:    center;     /* Centro los items del menu */
+        gap:                5px;        /* eeduzco el espacio entre elementos */
+        padding-left:       0;          /* quito padding izquierdo por defecto */
+    }
+    
+    nav ul li a {
+        padding:    8px 10px;           /* aumento ligeramente el area tactil */
+        font-size:  0.95em;             /* reduzco un poco el tamaño de fuente */
+    }
+    
+    /* reduzco el tamaño de los títulos */
+    h1 {
+        font-size:  1.8em;
+    }
+    
+    h2 {
+        font-size:  1.5em;
+    }
+    
+    h3 {
+        font-size:  1.2em;
+    }
+
+    /* imagen sea mas pequeña en moviles */
+    img {
+        width:      100%;
+        height:     200px;      /* ltura mAs pequeña para moviles */
+        object-fit: cover;      /* mantengo proporciones */
+    }
+    
+    
+    /* ajusto el padding del header y footer */
+    header, footer {
+        padding:    1.5em 0;    /* reduzco el padding vertical */
+    }
+}
+
+
 
 
 
