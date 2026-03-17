@@ -75,6 +75,14 @@
     background-color: #2980b9;      /* azul más oscuro al hacer hover */
 }
 
+.tarjeta h3::first-letter {
+  float:        left;
+  font-size:    1.5rem;
+  margin-right: 0.15rem;
+  font-weight:  700;
+  color:      #180404;
+}
+
 /* ------------------------------ MEDIA  PARA moviles ------------------------------------------- */
 /* ajustes para pantallas pequeñas (menos de 700px) */
 @media screen and (max-width: 700px) {
